@@ -53,7 +53,7 @@ double find_teta( double Q ,double I) // I ist cosinus Q ist sinus
 
 int main(void) {
     // Dein Code hier
-    // irgendwo hier  muss der nutzer den zaeler oder teil von dem eintragen
+    // irgendwo hier  muss der nutzer den zaeler oder teil von dem eintragen vielleicht mit ADC bin unsicher
     printf("Hallo Welt!\n");
     return 0;
 }
