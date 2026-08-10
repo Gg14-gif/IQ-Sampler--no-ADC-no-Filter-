@@ -42,19 +42,30 @@ double find_teta( double Q ,double I) // I ist cosinus Q ist sinus
       else if (Q/I > 1 )
          {
           teta = (3.14/2) - arctan(1 / (Q/I)); // ich habe realisiert 3.14/2 ist auch pi halbe aber gut genug
-          return teta;
+          
          }
          else if (Q/I < -1)
          {
             teta = - (3.14/2) - arctan(1 / (Q/I));
-          return teta;
+          
          }
-    else {
-          teta = arctan(Q/I);
-          return teta;
+    
+          else 
+         {
+        teta = arctan(Q / I); // Ab hier kommt 2ter und dritter Quadrant
+           }
+           if (I<0  && Q>=0)
+           {
+            teta = 3.14 +teta;
+           }
+           else if (I<0 && Q<0)
+           {
+            teta=teta -3.14;
+            }
+           return teta;
           }
 
-}
+
 
 
 int main(void) {
