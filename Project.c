@@ -39,9 +39,15 @@ double find_teta( double Q ,double I) // I ist cosinus Q ist sinus
         }
         return 0;
     }
-      else if (Q/I > 1)
+      else if (Q/I > 1 )
          {
-          teta = (3.14/2) - arctan(1 / (Q/I));
+          teta = (3.14/2) - arctan(1 / (Q/I)); // ich habe realisiert 3.14/2 ist auch pi halbe aber gut genug
+          return teta;
+         }
+         else if (Q/I < -1)
+         {
+            teta = - (3.14/2) - arctan(1 / (Q/I));
+          return teta;
          }
     else {
           teta = arctan(Q/I);
@@ -52,8 +58,7 @@ double find_teta( double Q ,double I) // I ist cosinus Q ist sinus
 
 
 int main(void) {
-    // Dein Code hier
-    // irgendwo hier  muss der nutzer den zaeler oder teil von dem eintragen vielleicht mit ADC bin unsicher
-    printf("Hallo Welt!\n");
+       // bin unsicher wie ich  I und Q reinwerfen werde muss ein ADC bauen oder so unsicher
+     find_teta();
     return 0;
 }
