@@ -1,0 +1,1 @@
+No filter because I already built one in Vhdl if you need a filter use the other project, the project is not finished because Iam not sure how to handle the main function. I have to feed I and Q but i think i will need ADC
